@@ -29,6 +29,7 @@ function App() {
         }
         ))}
       );
+      showAlert(true, "Item updated successfully", 'success')
       setIsEditing(false);
     }
     else if(name) {
