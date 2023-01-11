@@ -6,7 +6,7 @@ const Alert = ({alert, showAlert, list}) => {
   useEffect( () => {
     const timeout = setTimeout( () => { showAlert(false, '', '')}, 3000)
     return () => clearTimeout(timeout);
-  }, [list])
+  }, [list, showAlert])
   return (
     <div>
       { show ?
